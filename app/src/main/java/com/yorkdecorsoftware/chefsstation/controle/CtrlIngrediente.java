@@ -14,7 +14,7 @@ public class CtrlIngrediente {
     private static CtrlIngrediente instance = null;
 
     private CtrlIngrediente(Context context) {
-        db = Room.databaseBuilder(context, AppDatabase.class, "chefstation").allowMainThreadQueries().build();
+        db = Room.databaseBuilder(context, AppDatabase.class, "chefstation").fallbackToDestructiveMigration().build();
     }
 
     public static CtrlIngrediente getInstance(Context context){

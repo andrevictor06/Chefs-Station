@@ -17,7 +17,7 @@ public class CtrlReceita {
     private static CtrlReceita instance = null;
 
     private CtrlReceita(Context context) {
-        db = Room.databaseBuilder(context, AppDatabase.class, "chefstation").allowMainThreadQueries().build();
+        db = Room.databaseBuilder(context, AppDatabase.class, "chefstation").fallbackToDestructiveMigration().allowMainThreadQueries().build();
     }
 
     public static CtrlReceita getInstance(Context context){
