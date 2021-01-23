@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ingrediente.IngredienteFragment"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <ListView
+            android:id="@+id/modos"
+            style="@style/Widget.AppCompat.ListView"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:footerDividersEnabled="true"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/additem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_image"
+            android:text="Novo Modo de Preparo" />
+
+    </LinearLayout>
+
+</RelativeLayout>

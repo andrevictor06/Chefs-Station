@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Chefs Station</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Chefs Station</string>
+    <string name="nav_header_subtitle">comercial@chef.station.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="menu_home">Página Inicial</string>
+    <string name="menu_gallery">Ingredientes</string>
+    <string name="menu_slideshow">Medidas</string>
+    <string name="menu_medida">Medidas</string>
+    <string name="btn_save">Salvar Receita</string>
+    <string name="menu_receita">Nova Receita</string>
+    <string name="escolher_foto_galeria">Selecionar foto da galeria</string>
+    <string name="escolher_foto_camera">Capturar foto da câmera</string>
+    <string name="escolher_foto">Escolher Foto de Capa</string>
+    <string name="carregar_capa">Carregar Capa</string>
+    <string name="compartilhar">Gerar PDF</string>
+    <string name="receita_principal">Informações Principais</string>
+    <string name="receita_ingredientes">Ingredientes</string>
+    <string name="receita_modo_preparo">Modo de Preparo</string>
+    <string name="receita_imagens">Foto de Capa</string>
+    <string name="receita_etiquetas">Etiquetas (Tags)</string>
+</resources>

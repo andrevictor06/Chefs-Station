@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.receita.ReceitaFragmentTab">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_vertical_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/uid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tooltipText="Uid"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints"></com.google.android.material.textfield.TextInputEditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nome Receita"
+                    android:textSize="@dimen/textSize">
+                </com.google.android.material.textview.MaterialTextView>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:requiresFadingEdge="horizontal"
+                    android:tooltipText="Título da Receita"
+                    tools:ignore="MissingConstraints"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_input_text"></com.google.android.material.textfield.TextInputEditText>
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempo de Preparo"
+                android:textSize="@dimen/textSize">
+            </com.google.android.material.textview.MaterialTextView>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tempopreparo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tooltipText="Tempo de preparo da receita"
+                tools:ignore="MissingConstraints"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_timer"
+                android:background="@drawable/bg_input_text"></com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rendimento da receita"
+                android:textSize="@dimen/textSize">
+            </com.google.android.material.textview.MaterialTextView>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rendimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tooltipText="Rendimento da receita"
+                tools:ignore="MissingConstraints"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_dinner"
+                android:background="@drawable/bg_input_text"></com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nível de dificuldade da receita"
+                android:textSize="@dimen/textSize">
+            </com.google.android.material.textview.MaterialTextView>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dificuldade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tooltipText="Nível de dificuldade da receita"
+                tools:ignore="MissingConstraints"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_barbel"
+                android:background="@drawable/bg_input_text"></com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição da receita"
+                android:textSize="@dimen/textSize">
+            </com.google.android.material.textview.MaterialTextView>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tooltipText="Descrição da receita"
+                tools:ignore="MissingConstraints"
+                android:lines="8"
+                android:background="@drawable/bg_input_text"></com.google.android.material.textfield.TextInputEditText>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+
+            android:drawableLeft="@drawable/ic_save"
+            android:text="@string/btn_save"
+            android:layout_gravity="right|bottom"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>
